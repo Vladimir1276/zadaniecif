@@ -1,0 +1,5 @@
+f = input()
+with open(f,'r') as f:
+  a = f.read().split()
+m = sorted(a)[len(a) // 2]
+print (sum(abs(v - m) for v in a))
